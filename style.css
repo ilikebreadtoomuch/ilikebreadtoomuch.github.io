@@ -1,0 +1,63 @@
+@font-face {
+	font-family: "Pixelated MS Sans Serif";
+	src: url(https://unpkg.com/98.css@0.1.16/dist/ms_sans_serif.woff) format("woff");
+	src: url(https://unpkg.com/98.css@0.1.16/dist/ms_sans_serif.woff2) format("woff2");
+	font-weight: 400;
+	font-style: normal
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#bg {
+    width: 100%;
+    height: 100%;
+    animation: bgscroll 20s linear infinite;
+    position: fixed;
+}
+
+@keyframes bgscroll {
+    from {
+        background-position-x: 0px;
+        background-position-y: 0px;
+    }
+    to {
+        background-position-x: 384px;
+        background-position-y: 384px;
+    }
+}
+
+#corner {
+	position: fixed;
+    top: 4%;
+    left: 2%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align:center;
+}
+
+#main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: black;
+    color: white;
+    padding: 50px;
+    text-align:center;
+}
+
+#main > *, #corner > * {
+	margin:auto;
+}
+
+#main > a {
+	margin-left: 6px;
+	margin-right: 6px;
+}
