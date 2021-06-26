@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Kosugi+Maru");
+
+body {
+	background: url(https://ilikebreadtoomuch.github.io/bgs/bg1.png);
+	background-size: 384px 384px;
+	animation: bgscroll 20s linear infinite;
+}
+
+* {
+	font-family: "Kosugi Maru";
+	color: white;
+	image-rendering: pixelated;
+        image-rendering: optimizeSpeed;
+	text-shadow: -1px -1px 0 #009EC1;
+}
+
+.topLeft, .topRight, textarea, button, .tableRight, .tableLeft, .boxHead, .rightHead, input, #header, #hSub, .box.blog {
+	background-color: black !important;
+}
+
+h4, .fwiendCount {
+	color: #00D4FF;
+}
+
+.about {
+	display: flex;
+}
+
+.about > * {
+	margin: auto;
+}
+
+.about > img {
+	width: 378px;
+}
+
+textarea, button, input {
+	border: 1px solid #FFF !important;
+}
+
+.player.box, .url.box {
+	display: none;
+}
+
+
+@keyframes bgscroll {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 384px 384px;
+	}
+}

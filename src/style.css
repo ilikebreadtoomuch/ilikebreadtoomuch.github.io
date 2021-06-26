@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Kosugi+Maru");
+
+* {
+	image-rendering: pixelated;
+	image-rendering: optimizeSpeed;
+}
+
+body, html {
+	height: 100vh;
+	width: 100vw;
+	animation: bgscroll 20s linear infinite;
+	background-color: black;
+	margin: 0;
+	display: flex;
+}
+
+@keyframes bgscroll {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 384px 384px;
+	}
+}
+
+.btn > img {
+	width: 48px;
+}
+
+#corner {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	width: 48px;
+	color: white;
+	padding: 10px;
+}
+
+#main {
+	margin: auto;
+	background-color: black;
+	color: white;
+	padding: 50px;
+	text-align:center;
+	font-family: "Kosugi Maru";
+	-webkit-font-smoothing: none;
+	font-size: 16.5px; 
+}
+
+#main > *, #corner > * {
+	margin:auto;
+}
+
+#main > a {
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+.btn:hover {
+	filter: brightness(1.5);
+}
+
+.btn {
+	transition: filter .2s;
+}
