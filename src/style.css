@@ -6,8 +6,8 @@
 }
 
 body, html {
-	height: 100vh;
-	width: 100vw;
+	height: 100%;
+	width: 100%;
 	animation: bgscroll 20s linear infinite;
 	background-color: black;
 	margin: 0;
@@ -40,10 +40,10 @@ body, html {
 	margin: auto;
 	background-color: black;
 	color: white;
+	word-wrap: break-word;
 	padding: 50px;
 	text-align:center;
 	font-family: "Kosugi Maru";
-	-webkit-font-smoothing: none;
 	font-size: 16.5px; 
 }
 
@@ -54,6 +54,14 @@ body, html {
 #main > a {
 	margin-left: 6px;
 	margin-right: 6px;
+}
+
+a:link {
+	color: white;
+}
+
+a:hover {
+	color: orange;
 }
 
 .btn:hover {
